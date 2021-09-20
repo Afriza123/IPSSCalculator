@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB624E3326F867D100C90951 /* Mulai.png in Resources */ = {isa = PBXBuildFile; fileRef = AB624E3226F867D000C90951 /* Mulai.png */; };
+		AB624E3526F8683600C90951 /* tentang.png in Resources */ = {isa = PBXBuildFile; fileRef = AB624E3426F8683600C90951 /* tentang.png */; };
+		ABB6D87A26F77C6F0011AD26 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB6D87926F77C6F0011AD26 /* tab.png */; };
+		ABC010A826E1F0CB00A56F10 /* mulai.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC010A726E1F0CB00A56F10 /* mulai.swift */; };
+		ABC010AA26E1F78D00A56F10 /* hasil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC010A926E1F78D00A56F10 /* hasil.swift */; };
 		ABD94AB526E1155000EC163D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD94AB426E1155000EC163D /* AppDelegate.swift */; };
 		ABD94AB726E1155000EC163D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD94AB626E1155000EC163D /* SceneDelegate.swift */; };
 		ABD94AB926E1155000EC163D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD94AB826E1155000EC163D /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB624E3226F867D000C90951 /* Mulai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mulai.png; sourceTree = "<group>"; };
+		AB624E3426F8683600C90951 /* tentang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tentang.png; sourceTree = "<group>"; };
+		ABB6D87926F77C6F0011AD26 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
+		ABC010A726E1F0CB00A56F10 /* mulai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mulai.swift; sourceTree = "<group>"; };
+		ABC010A926E1F78D00A56F10 /* hasil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hasil.swift; sourceTree = "<group>"; };
 		ABD94AB126E1155000EC163D /* IPSS Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPSS Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD94AB426E1155000EC163D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD94AB626E1155000EC163D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +66,7 @@
 		ABD94AB326E1155000EC163D /* IPSS Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				ABD94ACA26E117CD00EC163D /* Files */,
 				ABD94AB426E1155000EC163D /* AppDelegate.swift */,
 				ABD94AB626E1155000EC163D /* SceneDelegate.swift */,
 				ABD94AB826E1155000EC163D /* ViewController.swift */,
@@ -63,8 +74,20 @@
 				ABD94ABD26E1155200EC163D /* Assets.xcassets */,
 				ABD94ABF26E1155200EC163D /* LaunchScreen.storyboard */,
 				ABD94AC226E1155200EC163D /* Info.plist */,
+				ABC010A726E1F0CB00A56F10 /* mulai.swift */,
+				ABC010A926E1F78D00A56F10 /* hasil.swift */,
 			);
 			path = "IPSS Calculator";
+			sourceTree = "<group>";
+		};
+		ABD94ACA26E117CD00EC163D /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB624E3226F867D000C90951 /* Mulai.png */,
+				AB624E3426F8683600C90951 /* tentang.png */,
+				ABB6D87926F77C6F0011AD26 /* tab.png */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB624E3326F867D100C90951 /* Mulai.png in Resources */,
+				AB624E3526F8683600C90951 /* tentang.png in Resources */,
 				ABD94AC126E1155200EC163D /* LaunchScreen.storyboard in Resources */,
+				ABB6D87A26F77C6F0011AD26 /* tab.png in Resources */,
 				ABD94ABE26E1155200EC163D /* Assets.xcassets in Resources */,
 				ABD94ABC26E1155000EC163D /* Main.storyboard in Resources */,
 			);
@@ -138,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABD94AB926E1155000EC163D /* ViewController.swift in Sources */,
+				ABC010AA26E1F78D00A56F10 /* hasil.swift in Sources */,
 				ABD94AB526E1155000EC163D /* AppDelegate.swift in Sources */,
+				ABC010A826E1F0CB00A56F10 /* mulai.swift in Sources */,
 				ABD94AB726E1155000EC163D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JU96M65H32;
 				INFOPLIST_FILE = "IPSS Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "All-WE.IPSS-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JU96M65H32;
 				INFOPLIST_FILE = "IPSS Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "All-WE.IPSS-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
