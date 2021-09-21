@@ -1,6 +1,7 @@
 # IPSSCalculator
 
 Aplikasi penghitung Internasional Prostate Symptom Score (IPSS) dengan kuesioner yang sudah diterjemahkan dalam bahasa Indonesia.
+Pemograman dilakukan menggunakan xcode dengan bahasa pemograman berupa Swift dan didesain untuk bekerja pada iPhone dengan ios 13 keatas
 
 Kuisioner memuat 7 pertanyaan berupa :
 1. Seberapa sering Anda merasa masih ada sisa selesai kencing?
