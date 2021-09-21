@@ -13,20 +13,20 @@ Kuisioner memuat 7 pertanyaan berupa :
 
 Setiap pertanyaan memiliki 6 pilihan jawaban yang akan memberikan nilai 0-5 pada variabel setiap pertanyaan
 Aplikasi ini menggunakan 9 variabel yakni 
-var sisa --> Pertanyaan nomor 1
-var ulang --> Pertanyaan nomor 2
-var putus --> Pertanyaan nomor 3
-var nunda --> Pertanyaan nomor 4
-var lemah --> Pertanyaan nomor 5
-var mengejan --> Pertanyaan nomor 6
-var bangun --> Pertanyaan nomor 7
-var total --> Jumlah nilai variabel pertanyaan 1-7
-var nilaiparah --> Teks menentukan keparahan berdasarkan variabel total
+1. var sisa --> Pertanyaan nomor 1
+2. var ulang --> Pertanyaan nomor 2
+3. var putus --> Pertanyaan nomor 3
+4. var nunda --> Pertanyaan nomor 4
+5. var lemah --> Pertanyaan nomor 5
+6. var mengejan --> Pertanyaan nomor 6
+7. var bangun --> Pertanyaan nomor 7
+8. var total --> Jumlah nilai variabel pertanyaan 1-7
+9. var nilaiparah --> Teks menentukan keparahan berdasarkan variabel total
 
 Variabel nilaiparah terbagi menjadi 3 hasil akhir berupa
-Gejala ringan --> 0-7
-Gejala sedang --> 8-19
-Gejala berat --> >19
+Gejala ringan (0-7),
+Gejala sedang (8-19),
+Gejala berat (>19)
 
 Penetapan klasifikasi gejala tersebut diambil dari artikel penelitian Rusliyawati et al. (2021).
 
