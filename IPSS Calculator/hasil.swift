@@ -11,6 +11,7 @@ class hasil: UIViewController {
     
     @IBOutlet weak var skor: UILabel!
     @IBOutlet weak var parah: UILabel!
+    @IBOutlet weak var suggestion: UILabel!
     
     var total:Int = 0
     var nilaiparah = "Gejala ringan"
@@ -34,5 +35,18 @@ class hasil: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         skor.text = String(total)
         parah.text = nilaiparah
+        if nilaiparah == "Gejala ringan" {
+            suggestion.text = "Direkomendasikan anda menemui pelayanan kesehatan setempat apabila diperlukan, dan periksa skor IPSS berkala setiap 3-6 bulan"
+        }
+        else {
+            if nilaiparah == "Gejala sedang" {
+                suggestion.text = "Direkomendasikan anda menemui pelayanan kesehatan setempat secepatnya sehingga dapat diperiksa dan dapat dilakukan tatalaksana"
+            }
+            else {
+                if nilaiparah == "Gejala berat" {
+                    suggestion.text = "Direkomendasikan anda menemui pelayanan kesehatan setempat secepatnya sehingga dapat diperiksa dan dapat dilakukan tatalaksana"
+                }
+            }
+        }
     }
 }

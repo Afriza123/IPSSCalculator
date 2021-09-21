@@ -326,7 +326,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OH1-Oy-eHm">
-                                <rect key="frame" x="10" y="353.5" width="300" height="61"/>
+                                <rect key="frame" x="10" y="278.5" width="300" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keparahan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-y5-Qaf">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
@@ -349,20 +349,33 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-IP-bQX">
+                                <rect key="frame" x="17.5" y="396.5" width="285" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="4eS-C0-hgG"/>
+                                    <constraint firstAttribute="height" constant="125" id="Qvp-Hq-C3A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pdP-lQ-4GR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OH1-Oy-eHm" firstAttribute="centerX" secondItem="RhU-KY-YNW" secondAttribute="centerX" id="457-KS-V26"/>
+                            <constraint firstItem="zE3-IP-bQX" firstAttribute="centerY" secondItem="OH1-Oy-eHm" secondAttribute="centerY" constant="150" id="Hs3-iu-xE2"/>
                             <constraint firstItem="Hlh-8G-Gvf" firstAttribute="centerY" secondItem="RhU-KY-YNW" secondAttribute="centerY" constant="-100" id="QbY-6p-752"/>
                             <constraint firstItem="Hlh-8G-Gvf" firstAttribute="centerX" secondItem="RhU-KY-YNW" secondAttribute="centerX" id="TSu-XQ-pMU"/>
-                            <constraint firstItem="OH1-Oy-eHm" firstAttribute="centerY" secondItem="RhU-KY-YNW" secondAttribute="centerY" constant="100" id="e7P-ro-Tdb"/>
+                            <constraint firstItem="OH1-Oy-eHm" firstAttribute="centerY" secondItem="Hlh-8G-Gvf" secondAttribute="centerY" constant="125" id="e7P-ro-Tdb"/>
+                            <constraint firstItem="zE3-IP-bQX" firstAttribute="centerX" secondItem="RhU-KY-YNW" secondAttribute="centerX" id="raF-1U-7s3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pWU-HZ-zby"/>
                     <connections>
                         <outlet property="parah" destination="MJh-wg-l93" id="3D6-v0-S2R"/>
                         <outlet property="skor" destination="8LP-PU-liw" id="Xxt-iv-0ow"/>
+                        <outlet property="suggestion" destination="zE3-IP-bQX" id="f4y-dZ-xMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHb-FY-5YO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
