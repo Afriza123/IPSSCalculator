@@ -11,6 +11,33 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="wqu-5M-6Tw">
+            <objects>
+                <viewController id="JkY-W7-X0k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xnN-Hb-QJ5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tentang" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-rI-HMH">
+                                <rect key="frame" x="-827" y="0.0" width="1974" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ab3-0Q-bVS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YFV-rI-HMH" firstAttribute="top" secondItem="xnN-Hb-QJ5" secondAttribute="top" id="6Eb-Ec-20d"/>
+                            <constraint firstItem="YFV-rI-HMH" firstAttribute="centerY" secondItem="xnN-Hb-QJ5" secondAttribute="centerY" id="BM0-S2-E91"/>
+                            <constraint firstItem="YFV-rI-HMH" firstAttribute="centerX" secondItem="xnN-Hb-QJ5" secondAttribute="centerX" id="HID-y0-3dA"/>
+                            <constraint firstAttribute="bottom" secondItem="YFV-rI-HMH" secondAttribute="bottom" id="WyL-gL-o0W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C38-ng-OFv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqd-Sj-ozg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755" y="-681"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="z67-wP-Ep7">
             <objects>
                 <viewController id="kb4-7t-63c" sceneMemberID="viewController">
@@ -27,6 +54,9 @@
                                     <constraint firstAttribute="width" secondItem="G3U-kl-efa" secondAttribute="height" multiplier="142:63" id="cl5-Fl-u9G"/>
                                 </constraints>
                                 <state key="normal" image="tentang.png"/>
+                                <connections>
+                                    <segue destination="JkY-W7-X0k" kind="show" id="MSt-Ib-500"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esR-WU-7So">
                                 <rect key="frame" x="40.5" y="233" width="239" height="102"/>
@@ -363,6 +393,7 @@
         <image name="MainMenu" width="1974" height="3508"/>
         <image name="Mulai.png" width="311.51998901367188" height="133.44000244140625"/>
         <image name="Pertanyaan" width="1974" height="3508"/>
+        <image name="Tentang" width="1974" height="3522"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="tab.png" width="469.92001342773438" height="139.67999267578125"/>
         <image name="tentang.png" width="284.16000366210938" height="126.23999786376953"/>
